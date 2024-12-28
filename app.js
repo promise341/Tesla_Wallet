@@ -75,7 +75,7 @@ function receiveBtc() {
 }
 
 function viewQrCode() {
-    alert("Displaying QR Code... (This is a placeholder; an actual QR code would be displayed here.)");
+    alert("Displaying QR Code... )");
     // You can integrate a library to generate a QR code from the wallet address
 }
 
