@@ -1,4 +1,4 @@
-let currentBalance = 0.75; // Initial balance in BTC
+let currentBalance = 30000; // Initial balance in BTC
 
 function unlockWallet() {
     const unlockCode = document.getElementById("unlockCode").value;
