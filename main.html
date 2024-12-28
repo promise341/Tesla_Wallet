@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tesla Wallet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Tesla Wallet</h1>
+            <div class="user-info">User:James carlo verzaro</div>
+        </header>
+        
+        <main>
+            <section class="balance">
+                <h2>Current Balance</h2>
+                <p class="balance-amount" id="balance">$30,000.00 </p>
+            </section>
+
+            <section class="unlock">
+                <h2>Unlock Wallet</h2>
+                <input type="text" id="unlockCode" placeholder="Enter Tesla Model 3 Unlock Code"><br><br>
+                <button onclick="unlockWallet()">Unlock Wallet</button>
+            </section>
+
+
+            <section class="withdrawal">
+                <h2>Withdraw</h2>
+                <input type="text" id="withdrawAmount" placeholder="Amount (BTC)">
+                <input type="text" id="withdrawAddress" placeholder="Recipient Address"><br><br>
+                <button onclick="withdrawBtc()">Withdraw</button><br><br>
+                <button onclick="viewQrCode()">View more details </button>
+            </section>
+
+            <section class="quick-actions">
+                <button onclick="sendBtc()">Send </button>
+                <button onclick="receiveBtc()">Receive </button>
+                <button onclick="viewQrCode()">View QR Code</button>
+               
+            </section>
+        </main>
+
+        <footer>
+            <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a> | <a href="#">Contact Support</a></p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

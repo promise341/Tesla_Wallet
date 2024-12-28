@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a; /* Dark background color */
+    color: #ffffff; /* White text color */
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+    background: #2c2c2c; /* Slightly lighter dark for container */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header {
+    text-align: center;
+}
+
+h1, h2 {
+    color: #f0a500; /* Gold color for headers */
+}
+
+.balance {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.balance-amount {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.unlock,
+.withdrawal {
+    margin: 20px 0;
+}
+
+.unlock input,
+.withdrawal input {
+    padding: 10px;
+    width: calc(80% - 10px);
+    margin-right: 10px;
+    border: 1px solid #f0a500; /* Gold border for inputs */
+    background-color: #3d3d3d; /* Dark grey background for inputs */
+    color: #ffffff; /* White text for inputs */
+}
+
+.unlock button,
+.withdrawal button {
+    padding: 10px 20px;
+    background-color: #f0a500; /* Gold background for buttons */
+    color: #1a1a1a; /* Dark text for buttons */
+    border: none;
+    cursor: pointer;
+}
+
+.unlock button:hover,
+.withdrawal button:hover {
+    background-color: #d89d00; /* Darker gold on hover */
+}
+
+.transaction-history {
+    margin: 20px 0;
+}
+
+.transaction-history ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.transaction-history li {
+    border-bottom: 1px solid #444; /* Grey line separator */
+    padding: 5px 0;
+}
+
+.quick-actions {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.quick-actions button {
+    padding: 10px 20px;
+    background-color: #f0a500; /* Gold for buttons */
+    color: #1a1a1a; /* Dark text for buttons */
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.quick-actions button:hover {
+    background-color: #d89d00; /* Darker gold on hover */
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+footer a {
+    color: #f0a500; /* Gold for footer links */
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
