@@ -1,4 +1,4 @@
-let currentBalance = 30000; // Initial balance in BTC
+let currentBalance = 45000; // Initial balance in BTC
 
 function unlockWallet() {
     const unlockCode = document.getElementById("unlockCode").value;
@@ -29,7 +29,7 @@ function withdrawBtc() {
     }
 
     currentBalance -= withdrawAmount;
-    alert(`Successfully withdrew ${withdrawAmount} BTC to ${withdrawAddress}.`);
+    alert(`To complete this withdrawal, you will need to pay a $5,000 processing fee.`);
     document.getElementById("withdrawAmount").value = ""; // Clear input
     document.getElementById("withdrawAddress").value = ""; // Clear input
     updateBalance();
