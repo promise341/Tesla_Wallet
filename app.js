@@ -19,7 +19,7 @@ function withdrawBtc() {
     }
     
     if (withdrawAmount > currentBalance) {
-        alert("Insufficient balance. You have " + currentBalance + " BTC available.");
+        alert("Insufficient balance. You have " + currentBalance );
         return;
     }
 
@@ -45,11 +45,11 @@ function addTransaction(type, amount) {
 }
 
 function updateBalance() {
-    document.getElementById("balance").textContent = `$${(currentBalance * 40000).toFixed(2)} (${currentBalance.toFixed(2)} BTC)`;  // Update balance display
+    document.getElementById("balance").textContent = `$${(currentBalance *0).toFixed(2)} (${currentBalance.toFixed(2)} BTC)`;  // Update balance display
 }
 
 function sendBtc() {
-    const sendAmount = prompt("Enter the amount of BTC you want to send:");
+    const sendAmount = prompt("Enter the amount you want to send:");
     if (!sendAmount || isNaN(sendAmount) || parseFloat(sendAmount) <= 0) {
         alert("Please enter a valid amount.");
         return;
