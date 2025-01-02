@@ -45,7 +45,7 @@ function addTransaction(type, amount) {
 }
 
 function updateBalance() {
-    document.getElementById("balance").textContent = `$${(currentBalance *0).toFixed(2)} (${currentBalance.toFixed(2)} BTC)`;  // Update balance display
+  // document.getElementById("balance").textContent = `$${(currentBalance *0).toFixed(2)} (${currentBalance.toFixed(2)} BTC)`;  // Update balance display
 }
 
 function sendBtc() {
